@@ -6,7 +6,7 @@
 .header{
     min-height:  100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://polaris2516.github.io/lerts/blob/main/static/images/school_bg_header.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://github.com/polaris2516/lerts/blob/main/static/images/school_bg_header.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
