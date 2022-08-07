@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lester John Lee">
+    <link rel="stylesheet" type= "text/css" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/all.css" type='text/css'>
+    <title>LERTS</title>
+    <link rel= "icon" href="static/images/lerts logo.jpg" type="image/x-icon>"
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="static/images/lerts logo.jpg"></a>
+            <div class="links" id="links">
+                <i class="fa-solid fa-xmark" onclick="Hiding()"></i>
+                    <ul>
+                        <li><a href="">HOME</li></a>
+                        <li><a href="">ABOUT</li></a>
+                        <li><a href="">COURSE</li></a>
+                        <li><a href="">BLOG</li></a>
+                        <li><a href="">CONTACT US</li></a>
+                    </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="Showing()"></i>
+        </nav>
+        <div class="introduction">
+            <h1>LEE-ENRERA <br> Reading and Tutorial Services</h1>
+            <p>At the comfort of your Home</p>
+        </div>
+    </section>
+        <footer>
+            <h2>LERTS Reading and Tutorial Services</h2>
+            <i class="fa-solid fa-phone"> &nbsp 09567704324</i>
+            <i class="fa-solid fa-envelope">&nbsp lerts123@gmail.com</i>
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook">&nbsp Facebook</i>
+            </a>
+            <a href="https://youtube.com">
+            <i class="fa-brands fa-youtube">&nbsp Youtube</i>
+            </a>
+            <p>All rights reserved 2022</p>
+        </footer>
+    <script>
+
+         var links = document.getElementById("links");
+         function Showing(){
+            links.style.right="0";
+         }
+         function Hiding(){
+            links.style.right="-220px";
+         }
+
+    </script>
+    
+</body>
+</html>
