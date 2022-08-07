@@ -14,10 +14,10 @@
 nav{
     display: flex;
     padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
 }
 nav img{
@@ -112,6 +112,63 @@ footer .fa-brands{
 footer a{
     text-decoration: none;
 }
+.fancybutton{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    border: 1px solid rgb(0, 195, 255);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.fancybutton:hover{
+    border: 1px solid rgb(0, 195, 255);
+    background-color: rgb(0, 195, 255);
+    transition: 1s;
+}
+
+
+/* ------sub-header----- */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/about_us.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+    font-size: 100px;
+}
+.row {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.aboutcol {
+    flex-basis: 48%;
+    padding: 30px 2px;
+    float: left;
+}
+.aboutcol h1{
+    padding-top: 0;
+    align-content: center;
+}
+.aboutcol p{
+    padding: 15px 0 25px;
+    display: block;
+    width: 400px;
+    text-align: justify;
+}
+.about_image {
+    width: 50%;
+    padding-left: 700px;
+}
 
 @media(max-width: 745px){
     nav img{
@@ -179,6 +236,7 @@ footer a{
         font-size: 20px;
     }
 }
+
 @media(max-width: 873px){
     nav img{
         width: 65px;
