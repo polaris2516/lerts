@@ -248,7 +248,7 @@ footer {
     background-color: DarkSalmon;
     color: white;
     display: block;
-    height: 250px;
+    height: 270px;
     background: #343a40;
     color: antiquewhite;
     bottom: 0px;
@@ -272,6 +272,7 @@ footer .fa-solid{
     padding: 10px;
     text-align: start;
     color:#55799c;
+    width: 250px;
 }
 footer .fa-brands{
     display: flex;
@@ -279,10 +280,15 @@ footer .fa-brands{
     text-align: justify;
     color:#55799c;
     cursor: pointer;
+    width: 250px;
 }
 footer a{
     text-decoration: none;
+    width: 10%;
 }
+
+/* -------fancy_button------ */
+
 .fancybutton{
     display: inline-block;
     text-decoration: none;
