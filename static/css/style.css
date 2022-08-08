@@ -212,6 +212,10 @@ nav .fa-solid{
     margin: 15px;
     cursor: pointer;
 }
+.review_1:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+}
 .profile_pic_1 {
     width: 80px;
     height: 80px;
@@ -311,7 +315,7 @@ footer a{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/about_us.jpg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/about\ us.png");
     background-position: center;
     background-size: cover;
     text-align: center;
