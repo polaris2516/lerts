@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lester John Lee">
-    <link rel="stylesheet" type= "text/css" href="static/css/style.css">
+    <!-- <link rel="stylesheet" type= "text/css" href="static/css/style.css"> -->
+    <link rel="stylesheet" type= "text/css" href="static/css/book.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/all.css" type='text/css'>
@@ -34,66 +39,73 @@
     </section>
 
     <!------- courses we offer ------->
-    <section class="courses">
-        <h1>Our Courses</h1>
-        <p>Online English Classes for All Ages and Levels</p>
-            <div class="courses-container">
-                <div class="course-box">
-                    <div class="avail-courses">
-                        <h3>Oxford-Based Courses</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            Nisi delectus, iste in maxime 
-                            repellat dolores molestiae 
-                            earum officiis assumenda 
-                            placeat. Quam, optio voluptatum 
-                            alias molestiae quidem est 
-                            exercitationem aliquam magni!</p>
+    <section class="coursing">
+
+        <div class="book">
+
+            <input type="checkbox" id="c1">
+            <input type="checkbox" id="c2">
+            <input type="checkbox" id="c3">
+            <input type="checkbox" id="c4">
+            <input type="checkbox" id="c5">
+
+                <div id="cover"><img src="static/images/oxford.jpg"></div>
+                <div class="flip-book">
+                <div class="flip" id="p1">
+                    <div class="back">
+                        <img src="static/images/conversation.jpg">
+                        <label class="back-btn" for="c1">Back</label>
                     </div>
-                    <div class="avail-courses">
-                        <h3>Conversation Course</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            Nisi delectus, iste in maxime 
-                            repellat dolores molestiae 
-                            earum officiis assumenda 
-                            placeat. Quam, optio voluptatum 
-                            alias molestiae quidem est 
-                            exercitationem aliquam magni!</p>
+                    <div class="front">
+                        <h2>Oxford-Based Courses</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+                    <label class="next-btn" for="c1">Next</label>
                     </div>
-                    <div class="avail-courses">
-                        <h3>Pronunciation And Accent Courses</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            Nisi delectus, iste in maxime 
-                            repellat dolores molestiae 
-                            earum officiis assumenda 
-                            placeat. Quam, optio voluptatum 
-                            alias molestiae quidem est 
-                            exercitationem aliquam magni!</p>
+                </div>
+                <div class="flip" id="p2">
+                    <div class="back">
+                        <img src="static/images/talk.jpg">
+                        <label class="back-btn" for="c2">Back</label>
                     </div>
-                    <div class="avail-courses">
-                        <h3>Free Talk</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            Nisi delectus, iste in maxime 
-                            repellat dolores molestiae 
-                            earum officiis assumenda 
-                            placeat. Quam, optio voluptatum 
-                            alias molestiae quidem est 
-                            exercitationem aliquam magni!</p>
+                    <div class="front">
+                        <h2>Conversation Courses</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+                    <label class="next-btn" for="c2">Next</label>
                     </div>
-                    <div class="avail-courses">
-                        <h3>News</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                            consectetur adipisicing elit. 
-                            Nisi delectus, iste in maxime 
-                            repellat dolores molestiae 
-                            earum officiis assumenda 
-                            placeat. Quam, optio voluptatum 
-                            alias molestiae quidem est 
-                            exercitationem aliquam magni!</p>
+                </div>
+                <div class="flip" id="p3">
+                    <div class="back">
+                        <img src="static/images/accent.jpg">
+                        <label class="back-btn" for="c3">Back</label>
                     </div>
+                    <div class="front">
+                            <h2>Free talk</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+                    <label class="next-btn" for="c3">Next</label>
+                    </div>
+                </div>
+                <div class="flip" id="p4">
+                    <div class="back">
+                        <img src="static/images/news.jpg">
+                        <label class="back-btn" for="c4">Back</label>
+                    </div>
+                    <div class="front">
+                            <h2>Pronunciation and Accent Course</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+                    <label class="next-btn" for="c4">Next</label>
+                    </div>
+                </div>
+                <div class="flip" id="p5">
+                    <div class="back">
+                        <img src="static/images/3.jpg">
+                        <label class="back-btn" for="c5">Back</label>
+                    </div>
+                    <div class="front">
+                        <h2>News</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+                    <label class="next-btn" for="c5"></label>
+                    </div>
+                </div>
                 </div>
             </div>
     </section>
@@ -125,6 +137,5 @@
          }
 
     </script>
-    
 </body>
 </html>
