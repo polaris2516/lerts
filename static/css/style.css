@@ -295,7 +295,8 @@ footer .fa-brands{
 }
 footer a{
     text-decoration: none;
-    width: 10%;
+    display: block;
+    width: 20%;
 }
 
 /* -------fancy_button------ */
@@ -318,7 +319,7 @@ footer a{
 }
 
 
-/* ------sub-header_about.html----- */
+/* ----------------------------------sub-header_about.html-------------------------------------- */
 .sub-header{
     min-height: 50vh;
     width: 100%;
@@ -372,7 +373,7 @@ footer a{
 }
 /* -----------tutors------------- */
 .tutors {
-    width: 87%;
+    width: 70%;
     height: auto;
     margin: auto;
 }
@@ -385,7 +386,7 @@ footer a{
     margin-top: 5%;
     width: auto;
     height: auto;
-    display: flex;
+    display: inline-flexbox;
     flex-basis: 31%;
     background: #788fa7;
     border-radius: 10px;
@@ -400,29 +401,35 @@ footer a{
 .tutor {
     padding-bottom: 50px;
     color: #fff;
-    display: flex;
+    display:inline-block;
     justify-content: space-between;
     width: 100%;
     height: auto;
+    margin: auto;
 }
 .individuals{
-    margin: 6%;
+    margin: 3%;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
-    display: inline-block;
-    justify-content: space-between;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
     border-radius: 10px;
 }
-.individuals h2{
+.individual{
+    display: inline-block;
+    /* margin:6%; */
+    padding-right: 50px;
+}
+.individual h2{
     font-size: 16px;
     padding: 15px;
     line-height: 22px;
     text-align: center;
 }
-.individuals img{
-    width: 175px;
-    height: 175px;
+.individual img{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 .individuals:hover{
@@ -431,6 +438,26 @@ footer a{
     transition: 1s;
 }
 
+/* ---------------------------courses course.html----------------------------------- */
+
+.course-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/about\ us.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.course-header h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 80px;
+    color: white;
+}
+.course-introduction h1{
+    text-align: center;
+    font-size: 60px
+}
 
 @media(max-width: 745px){
     nav img{
