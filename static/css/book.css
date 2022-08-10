@@ -140,7 +140,11 @@ p{
     display: block;
     margin: auto;
     color: white;
+}
+.packages h2 {
     padding-bottom: 100px;
+    text-align: center;
+    color: white;
 }
 .package-container {
     position: relative;
@@ -168,25 +172,41 @@ p{
     width: 100%;
     height: 100%;
     background: #f00;
-    transition: 0.5s;
+    transition: all 0.5s ease;
     z-index: 1;
 }
-.package-a h2 {
+.package-a .fa-solid {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 80px;
     color: #fff;
+}
+.package-a h2{
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 20%;
+    font-size: 30px;
+}
+.package-a:hover .fa-solid:before{
+    content: "\f2b6";
+    transition: all 1s ease;
+}
+.package-a:hover h2{
+    display:none;
+    transition: all 0.s ease;
 }
 .package-a:hover {
     top: 10px;
     left: calc(50% - 40px);
     width: 80px;
     height: 80px;
-    border-radius: 50%;
-    color: red;
+    border-radius: 10px;
+    font-size: 40px;
+    transition: all 0.5s ease;
 }
 .package-b {
     position: absolute;
@@ -198,21 +218,36 @@ p{
     transition: 0.5s;
     z-index: 1;
 }
-.package-b h2 {
+.package-b .fa-solid {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 80px;
     color: #fff;
+}
+.package-b h2{
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 20%;
+    font-size: 30px;
 }
 .package-b:hover {
     top: 10px;
     left: calc(50% - 40px);
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 10px;
+}
+.package-b:hover .fa-solid:before {
+    content: "\f2b6";
+    transition: all 1s ease;
+}
+.package-b:hover h2{
+    display:none;
+    transition: all 0.s ease;
 }
 .package-c {
     position: absolute;
@@ -224,21 +259,36 @@ p{
     transition: 0.5s;
     z-index: 1;
 }
-.package-c h2 {
+.package-c .fa-solid {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 80px;
     color: #fff;
+}
+.package-c h2{
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 20%;
+    font-size: 30px;
 }
 .package-c:hover {
     top: 10px;
     left: calc(50% - 40px);
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 10px;
+}
+.package-c:hover .fa-solid:before {
+    content: "\f2b6";
+    transition: all 1s ease;
+}
+.package-c:hover h2{
+    display:none;
+    transition: all 0.s ease;
 }
 .package-d {
     position: absolute;
@@ -250,34 +300,44 @@ p{
     transition: 0.5s;
     z-index: 1;
 }
-.package-d h2 {
+.package-d .fa-solid {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 80px;
     color: #fff;
+}
+.package-d h2{
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 20%;
+    font-size: 30px;
 }
 .package-d:hover {
     top: 10px;
     left: calc(50% - 40px);
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 10px;
+}
+.package-d:hover .fa-solid:before {
+    content: "\f2b6";
+    transition: all 1s ease;
+}
+.package-d:hover h2{
+    display:none;
+    transition: all 0.s ease;
 }
 .content {
     position: absolute;
     top: 100px;
-    height: calc(100% - 100px);
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    transition: 0.5s;
-}
-.content:hover {
-    top: 100%;
-    transition: 0.5s;
+    color: black;
 }
 .content p {
     text-align: center;
@@ -285,16 +345,41 @@ p{
 }
 .content h3{
     text-align: center;
-    margin: 0 0 5px;
-    padding: 0;
     font-size: 25px;
 }
 .content h4{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
-.package-a:nth-child(1) {
+.rate {
+    position: relative;
+}
+.rate h2{
+    text-align: center;
+}
+.package:nth-child(1) .package-a{
+    background: rgb(238, 61, 61);
+}
+.package:nth-child(1){
     background: #ec6e6e;
+}
+.package:nth-child(2) .package-b{
+    background:#04AA6D;
+}
+.package:nth-child(2){
+    background:#3bd89e;
+}
+.package:nth-child(3) .package-c{
+    background:#283c50;
+}
+.package:nth-child(3){
+    background:#788fa7;
+}
+.package:nth-child(4) .package-d{
+    background:#12b135;
+}
+.package:nth-child(4){
+    background:#2aeb53;
 }
 
 /* ----------------upper part------------------- */
@@ -428,104 +513,6 @@ footer a{
         position: relative;
         overflow-y: hidden;
     }
-    .sub-header {
-        overflow-y: hidden;
-    }
-    .introduction h1{
-        font-size: 40px;
-    }
-    .services img{
-        padding-top: 50px;
-        border-radius: 10px;
-        width: 65%;
-        transition: 0.7s;
-        flex-basis: 31%;
-        display: absolute;
-    }
-    .services_1 img{
-        padding-top: 50px;
-        border-radius: 10px;
-        width: 65%;
-        transition: 0.7s;
-        flex-basis: 31%;
-        display: absolute;
-    }
-    .services_2 img{
-        padding-top: 50px;
-        border-radius: 10px;
-        width: 65%;
-        transition: 0.7s;
-        flex-basis: 31%;
-        display: absolute;
-    }
-    .services h2{
-        padding-bottom: 15px;
-        font-size: 90%;
-    }
-    .services_1 h2{
-        padding-bottom: 15px;
-        font-size: 90%;
-    }
-    .services_2 h2{
-        padding-bottom: 15px;
-        font-size: 90%;
-    }
-    .services p{
-        font-size: 13px;
-        padding: 15px;
-        line-height: 22px;
-        text-align: justify;
-    }
-    .services_1 p{
-        font-size: 13px;
-        padding: 15px;
-        line-height: 22px;
-        text-align: justify;
-    }
-    .services_2 p{
-        font-size: 13px;
-        padding: 15px;
-        line-height: 22px;
-        text-align: justify;
-    }
-    .reviews h1{
-        font-size: 200%;
-        padding-bottom: 80px;
-        text-align: center;
-    }
-    .reviews {
-        display: block;
-        width: 100%;
-        align-items: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        margin: auto;
-        flex-direction: column;
-    }
-    .row {
-        width: auto;
-        margin: auto;
-        padding-top: 80px;
-        padding-bottom: 50px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .tutors h1{
-        font-size: 350%;
-        font-weight: 800;
-        text-align: center;
-        padding-left: 5px;
-    }
-    .tutors {
-        width: 50%;
-        margin: auto;
-    }
-    .aboutcol p{
-        padding: 15px 0 25px;
-        display: block;
-        width: auto;
-        text-align: justify;
-    }
 }
 @media(max-width: 745px){
     nav img{
@@ -592,75 +579,14 @@ footer a{
     .links ul li a{
         font-size: 20px;
     }
-    .individuals{
-        margin: 3%;
-        background-color: rgba(255, 255, 255, .15);  
-        backdrop-filter: blur(5px);
-        padding: 15px;
-        border-radius: 10px;
-        display: block;
-    }
-    .individuals img{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-    }
-    .tutor {
-        padding-bottom: 100px;
-        color: #fff;
-        display: block;
-        width: auto;
-        height: auto;
-    }
-    .tutors h1{
-        font-size: 350%;
-        font-weight: 800;
-        text-align: left;
-    }
-    .individuals img{
-        width: 150px;
-        height: 150px;
-        display: center;
-        border-radius: 50%;
-    }
-    .itemings {
-        margin-top: 5%;
-        display: inline-block;
-        flex-basis: 31%;
-        background: #788fa7;
-        border-radius: 10px;
-        margin-bottom: 3%;
-        padding: 20px 12px;
-        box-sizing: border-box;
-        transition: 0.7s;
-    }
-    .about_image {
-        width: 50%;
-        padding-left: 0;
-        padding-bottom: 30px;
-    }
-    .about_image_1 {
-        width: 100%;
-        padding-left: 0;
-        padding-bottom: 30px;
-    }
-    .sub-header h1{
-        margin-top: 100px;
-        font-size: 40px;
-    }
 }
 
 @media(max-width: 873px){
     nav img{
         width: 65px;
     }
-    .introduction h1{
-        font-size: 49px;
-    }
-    .introduction p{
-        margin: 10px 0 10px;
-        font-size: 20px;
-        color: #fff;
+    .course-introduction h1{
+        font-size: 30px;
     }
     .links ul li{
         display: inline-block;
@@ -676,13 +602,8 @@ footer a{
     nav img{
         width: 60px;
     }
-    .introduction h1{
+    .course-introduction h1{
         font-size: 49px;
-    }
-    .introduction p{
-        margin: 10px 0 10px;
-        font-size: 20px;
-        color: #fff;
     }
     .links ul li{
         display: inline-block;
