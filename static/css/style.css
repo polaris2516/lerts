@@ -1,3 +1,11 @@
+/* Author: Lee */
+/* HTML tutorial i followed: How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step by Easy Tutorial: https://www.youtube.com/watch?v=oYRda7UtuhA */
+/* Animation Border: Border composition and animation by Paolo Cavanna link: https://www.sliderrevolution.com/resources/css-border-animation/#:~:text=CSS%20border%20animation%20is%20useful,container%20element%20a%20unique%20style.* Note: List No. 25/
+/* Team Profile Design: Creative Our Team Section Using HTML & CSS Neumorphism by S-Tech04 link: https://www.youtube.com/watch?v=osd8Lqn_oVs&t=303s */
+/* CSS Flip Book animation: CSS FLIP BOOK ON CLICK USING HTML AND CSS ONLY | CREATIVE FLIP BOOK EFFECT by Coding Tutorials link:https://www.youtube.com/watch?v=A5fdu8HZKic */
+/* Customer Reviews Design: Responsive Customer Reviews on Website Only Using HTML and CSS by Going-To-Internet link:https://www.youtube.com/watch?v=O-QUBZuZlXM  */
+
+/* NOTE: Please support the sources or subscribe to them, they're an amazing people giving us free online courses and know-how. And of course, thanks for the free knowledge -author */
 *{
     margin: 0;
     padding: 0;
@@ -373,70 +381,151 @@ footer a{
 }
 /* -----------tutors------------- */
 .tutors {
-    width: 70%;
-    height: auto;
-    margin: auto;
+    box-sizing: border-box;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(186,229,228,1) 37%, rgba(33,148,227,1) 61%, rgba(0,212,255,1) 100%);
 }
 .tutors h1{
-    font-size: 350%;
-    font-weight: 800;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Silkscreen', cursive;
+}
+.tutors h2{
+    font-family: 'Silkscreen', cursive;
     text-align: center;
 }
-.itemings {
-    margin-top: 5%;
-    width: auto;
-    height: auto;
-    display: inline-flexbox;
-    flex-basis: 31%;
-    background: #788fa7;
-    border-radius: 10px;
-    margin-bottom: 3%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.7s;
-}
-.itemings:hover{
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 2);
-}
-.tutor {
-    padding-bottom: 50px;
-    color: #fff;
-    display:inline-block;
-    justify-content: space-between;
+.teachers{
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
     width: 100%;
-    height: auto;
-    margin: auto;
+    background: #bed3d2;
+    display: flex;
 }
-.individuals{
-    margin: 3%;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
+.profile {
     display: flex;
     justify-content: center;
-    padding: 20px;
-    border-radius: 10px;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.individual{
-    display: inline-block;
-    /* margin:6%; */
-    padding-right: 50px;
+.card {
+    width: 330px;
+    height: 320px;
+    padding: 60px 30px;
+    margin: 20px;
+    padding: 60px 30px;
+    margin: 20px;
+    background: #bed3d2;
+    border-radius: 20px;
 }
-.individual h2{
-    font-size: 16px;
-    padding: 15px;
-    line-height: 22px;
-    text-align: center;
+.card:hover {
+    box-shadow: 0.6em 0.6em 1.2em #bae5e4,
+                -0.5em -0.5em 1em #fff;
 }
-.individual img{
-    width: 200px;
-    height: 200px;
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
-.individuals:hover{
-    background-color: rgb(0, 195, 255);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 2);
-    transition: 1s;
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+.description h2{
+    color: #d8b51b;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.description h5{
+    color: #146e2a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    letter-spacing: 2px;
+}
+.socmed .fa-brands{
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.socmed .fa-brands:hover {
+    color: blue;
+}
+
+/* ------anime------ */
+@keyframes bg {
+    0% {
+        background-size:    0 3px,
+                            3px 0,
+                            0 3px,
+                            3px 0;
+    }
+    25% {
+        background-size:    100% 3px,
+                            3px 0,
+                            0 3px,
+                            3px 0;
+    }
+    50% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            0 3px,
+                            3px 0;
+    }
+    75% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            100% 3px,
+                            3px 0;
+    }
+    100% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            100% 3px,
+                            3px 100%;
+    }
+}
+.anime {
+    width: 25%;
+    margin: 2rem auto;
+    padding: 2em;
+    
+    background-repeat: no-repeat;
+    background-image:   linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
+                        linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%),
+                        linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
+                        linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%);
+    background-size:    100% 3px,
+                        3px 100%,
+                        100% 3px,
+                        3px 100%;
+    background-position:    0 0,
+                            100% 0,
+                            100% 100%,
+                            0 100%;
+    animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+/* --------responsiveness--------*/
 
 @media(max-width: 745px){
     nav img{
@@ -515,45 +604,6 @@ footer a{
         width: 200px;
         height: 200px;
         border-radius: 50%;
-    }
-    .tutor {
-        padding-bottom: 100px;
-        color: #fff;
-        display: block;
-        width: auto;
-        height: auto;
-    }
-    .tutors h1{
-        font-size: 350%;
-        font-weight: 800;
-        text-align: left;
-    }
-    .individuals img{
-        width: 150px;
-        height: 150px;
-        display: center;
-        border-radius: 50%;
-    }
-    .itemings {
-        margin-top: 5%;
-        display: inline-block;
-        flex-basis: 31%;
-        background: #788fa7;
-        border-radius: 10px;
-        margin-bottom: 3%;
-        padding: 20px 12px;
-        box-sizing: border-box;
-        transition: 0.7s;
-    }
-    .about_image {
-        width: 50%;
-        padding-left: 0;
-        padding-bottom: 30px;
-    }
-    .about_image_1 {
-        width: 100%;
-        padding-left: 0;
-        padding-bottom: 30px;
     }
     .sub-header h1{
         margin-top: 100px;
@@ -697,20 +747,10 @@ footer a{
         padding-left: 5px;
         padding-right: 5px;
     }
-    .tutors h1{
-        font-size: 350%;
-        font-weight: 800;
-        text-align: center;
-        padding-left: 5px;
+    .anime h1{
+        font-size: 30px;
     }
-    .tutors {
-        width: 50%;
-        margin: auto;
-    }
-    .aboutcol p{
-        padding: 15px 0 25px;
-        display: block;
-        width: auto;
-        text-align: justify;
+    .tutors h2{
+        font-size: 20px;
     }
 }
